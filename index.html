@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohammed Ansaf - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "WT2nOaV5t-WK1ByzX",
+            });
+        })();
+    </script>
+</head>
+
+<body>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container-fluid px-5">
+            <a class="navbar-brand fw-bold fs-2" href="#home" style="color: #3f396d">Mohammed Ansaf</a>
+            <button class="navbar-toggle-button d-md-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu">
+                <i class="bi bi-menu-button-fill"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarMenu">
+                <ul class="navbar-links navbar-nav gap-4" style="font-size: 1.1rem">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="#contact" class="btn btn-primary ms-4 py-2 px-4 rounded-pill d-none d-md-block">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero-section text-center py-5" id="home">
+        <div class="container">
+            <h1 class="fw-bold mb-3" style="color: #3f396d;">Hello! I’m <span class="text-primary">Ansaf</span></h1>
+            <div class="profileDiscr">
+                <p class="text-muted">A Full Stack Developer passionate about building dynamic and responsive web applications.</p>
+            </div>
+            <a href="#portfolio" class="btn btn-outline-primary mt-3 px-4">See My Work</a>
+        </div>
+    </section>
+
+    <section class="about-section py-5 bg-light" id="about">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4" style="color: #3f396d;">About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-md-3">
+                    <img src="images/profile.png" class="img-fluid rounded shadow" alt="About Me" />
+                </div>
+                <div class="col-md-6">
+                    <p class="text-muted">
+                        I am a Full Stack Web Developer with 3+ years of experience. My expertise lies in crafting efficient,
+                        user-friendly, and visually stunning web applications. From front-end frameworks to back-end technologies, I
+                        deliver results that exceed expectations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills-section py-5" id="skills">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4" style="color: #3f396d;">My Skills</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Front-End</h4>
+                    <ul class="list-unstyled text-muted">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Back-End</h4>
+                    <ul class="list-unstyled text-muted">
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Tools</h4>
+                    <ul class="list-unstyled text-muted">
+                        <li>VS Code</li>
+                        <li>Git</li>
+                        <li>Excel</li>
+                        <li>Word</li>
+                        <li>AI Technologies</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-section py-5 bg-light" id="portfolio">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4" style="color: #3f396d;">Portfolio</h2>
+            <p class="text-muted">A selection of my recent projects.</p>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/portfolio ss.png" class="card-img-top" alt="Portfolio Website" style="object-fit:cover; height:200px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Portfolio Website</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/netflix.jpeg" class="card-img-top" alt="Netflix Clone" style="object-fit:cover; height:200px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Netflix Clone</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/icloud.jpeg" class="card-img-top" alt="iCloud Clone" style="object-fit:cover; height:200px;">
+                        <div class="card-body">
+                            <h5 class="card-title">iCloud Clone</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section py-5" id="contact">
+      <div class="container text-center">
+          <h2 class="fw-bold mb-4" style="color: #3f396d;">Get in Touch</h2>
+          <p class="text-muted">Feel free to reach out for any inquiries or collaborations.</p>
+          <div class="row justify-content-center">
+              <div class="col-md-6">
+                  <form id="contact-form">
+                      <div class="mb-3">
+                          <label for="name" class="form-label">Name</label>
+                          <input type="text" class="form-control" id="name" placeholder="Your Name" required />
+                      </div>
+                      <div class="mb-3">
+                          <label for="email" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="email" placeholder="Your Email" required />
+                      </div>
+                      <div class="mb-3">
+                          <label for="message" class="form-label">Message</label>
+                          <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary w-100" onclick="sendMail()">Send Message</button>
+                      <div id="form-status"></div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <footer class="bg-dark">
+      <p>Connect with me on:</p>
+      <div class="social-icons">
+          <a href="https://linkedin.com/in/MohammedAnsaf" target="_blank"><i class="bi bi-linkedin"></i></a>
+          <a href="https://instagram.com/iam_ansaf" target="_blank"><i class="bi bi-instagram"></i></a>
+          <a href="https://github.com/ANSAF01" target="_blank"><i class="bi bi-github"></i></a>
+      </div>
+      <p>&copy; 2025 Mohammed Ansaf. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"></script>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
